@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main: #224952;
+  --color-highlight: #3f752d;
+  --color-highlight-2: #974422;
+  --color-highlight-3: #202a44;
+  --color-text: #636363;
+  --color-background: #4a6f87;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+aside,
+footer {
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+}
+
+p {
+  font-family: "Anton", sans-serif;
+}
+
+/* img {
+  width: 100%;
+  display: block;
+} */
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+}
+
+picture img {
+  max-width: none;
+}
+
+a[href]:hover {
+  background-color: #3f752d;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  padding: 1rem;
+  border: 0.25rem solid var(--button-color);
+  border-color: #202a44;
+  background-color: #202a;
+  transition: background-color 300ms;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
